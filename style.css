@@ -1043,26 +1043,7 @@ footer {
 .flavor-card.featured::before {
   content: "SPICE BROS ORIGINAL";
 
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  padding: 6px 12px;
-
-  background: var(--flavor-color);
-
-  color: white;
-
-  font-size: 0.6rem;
-
-  font-weight: 900;
-
-  letter-spacing: 1.5px;
-
-  border-bottom-right-radius: 6px;
-}
-
+  
 /* =========================
    SPICE BROS LOGO
 ========================= */
@@ -1074,23 +1055,24 @@ footer {
 }
 
 .logo img {
-  width: 150px;
-  height: auto;
-  max-height: 55px;
+  width: 90px;
+  height: 62px;
+
   object-fit: contain;
 
-  transition: 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .logo:hover img {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 
 /* Footer logo */
 
 .footer-brand .logo img {
-  width: 170px;
+  width: 130px;
+  height: 90px;
 }
 
 
@@ -1099,12 +1081,13 @@ footer {
 @media (max-width: 800px) {
 
   .logo img {
-    width: 125px;
-    max-height: 48px;
+    width: 70px;
+    height: 55px;
   }
 
   .footer-brand .logo img {
-    width: 150px;
+    width: 110px;
+    height: 75px;
   }
 
 }
@@ -1155,39 +1138,6 @@ footer {
   font-weight: 900;
 
   letter-spacing: 3px;
-}
-
-@media (max-width: 800px) {
-
-  .hero-logo-card {
-    width: 300px;
-    min-height: 300px;
-
-    padding: 35px;
-  }
-
-  .hero-logo {
-    max-width: 230px;
-  }
-
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.logo img {
-  width: 95px;
-  height: 65px;
-  object-fit: contain;
-  object-position: center;
-  transition: transform 0.2s ease;
-}
-
-.logo:hover img {
-  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
