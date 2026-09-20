@@ -1171,3 +1171,46 @@ footer {
   }
 
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 95px;
+  height: 65px;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 75px;
+    height: 55px;
+  }
+
+  .hero-logo-card {
+    width: 90%;
+    min-height: 420px;
+    padding: 20px;
+  }
+
+  .hero-logo-card img {
+    max-height: 350px;
+  }
+}
+
+:root {
+  --bg-color: #080808;
+  --text-color: #ffffff;
+  --accent-color: #9bc65a;
+  --accent-hover: #b3e06c;
+  --card-bg: #151515;
+}
