@@ -215,8 +215,7 @@ img {
 
 .btn.primary {
   background: var(--green);
-
-  color: white;
+  color: #080808;
 }
 
 .btn.primary:hover {
@@ -521,16 +520,14 @@ img {
   min-height: 500px;
 
   display: flex;
-
   justify-content: center;
-
   align-items: center;
 
   background:
     radial-gradient(
       circle,
-      #52200f 0%,
-      #1a0d08 45%,
+      #263617 0%,
+      #12180c 45%,
       #101010 75%
     );
 
@@ -558,7 +555,7 @@ img {
   transform: rotate(-8deg);
 
   box-shadow:
-    0 0 60px rgba(244, 81, 30, 0.25);
+  0 0 60px rgba(155, 198, 90, 0.25);
 }
 
 .about-badge span {
