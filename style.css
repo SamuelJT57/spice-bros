@@ -1108,3 +1108,66 @@ footer {
   }
 
 }
+
+.hero-logo-card {
+  width: 380px;
+  min-height: 380px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px;
+
+  background: #151515;
+
+  border: 1px solid var(--border);
+  border-radius: 20px;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.6);
+
+  transform: rotate(3deg);
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+
+  object-fit: contain;
+}
+
+.hero-divider {
+  width: 60px;
+  height: 3px;
+
+  margin: 25px 0 15px;
+
+  background: var(--orange);
+}
+
+.hero-logo-card p {
+  color: var(--muted);
+
+  font-size: 0.7rem;
+  font-weight: 900;
+
+  letter-spacing: 3px;
+}
+
+@media (max-width: 800px) {
+
+  .hero-logo-card {
+    width: 300px;
+    min-height: 300px;
+
+    padding: 35px;
+  }
+
+  .hero-logo {
+    max-width: 230px;
+  }
+
+}
