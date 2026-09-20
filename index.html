@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
     content="Spice Bros makes bold, flavorful toothpicks designed to bring a little extra spice to your day."
   >
 
-  <meta name="theme-color" content="#e85d04">
+  <meta name="theme-color" content="#9bc65a">
 
   <link rel="stylesheet" href="style.css">
 
@@ -24,31 +25,52 @@
   <link rel="icon" href="favicon.ico">
 </head>
 
+
 <body>
 
-  <!-- ================= NAVBAR ================= -->
+  <!-- =========================
+       NAVBAR
+  ========================= -->
 
   <header class="navbar">
-    <a href="#home" class="logo">
-  <img src="logo.png" alt="Spice Bros">
-</a>
 
-    <button class="menu-toggle" aria-label="Open navigation">
+    <a href="#home" class="logo">
+      <img src="logo.png" alt="Spice Bros">
+    </a>
+
+    <button
+      class="menu-toggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+    >
       <i class="fa-solid fa-bars"></i>
     </button>
 
     <nav class="nav-links">
+
       <a href="#home">Home</a>
+
       <a href="#flavors">Flavors</a>
+
       <a href="#about">About</a>
+
       <a href="#contact">Contact</a>
+
     </nav>
+
   </header>
 
 
-  <!-- ================= HERO ================= -->
+  <!-- =========================
+       MAIN
+  ========================= -->
 
   <main>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
 
     <section class="hero" id="home">
 
@@ -69,6 +91,7 @@
         </p>
 
         <div class="hero-buttons">
+
           <a href="#flavors" class="btn primary">
             Explore Flavors
             <i class="fa-solid fa-arrow-right"></i>
@@ -77,25 +100,30 @@
           <a href="#about" class="btn secondary">
             Meet the Bros
           </a>
+
         </div>
 
       </div>
 
+
+      <!-- ACTUAL SPICE BROS LOGO -->
+
       <div class="hero-product">
 
-        <div class="product-card">
-          <div class="product-glow"></div>
+        <div class="hero-logo-card">
 
-          <div class="toothpick-icon">
-            <i class="fa-solid fa-fire"></i>
-          </div>
+          <img
+            src="logo.png"
+            alt="Spice Bros flavored toothpicks logo"
+            class="hero-logo"
+          >
 
-          <p>SPICE BROS</p>
-          <h2>FLAVOR<br>COMING IN HOT.</h2>
+          <div class="hero-divider"></div>
 
-          <span class="product-label">
-            EST. 2026
-          </span>
+          <p>
+            FLAVORED TOOTHPICKS
+          </p>
+
         </div>
 
       </div>
@@ -103,188 +131,249 @@
     </section>
 
 
-    <!-- ================= FLAVORS ================= -->
+    <!-- =========================
+         FLAVORS
+    ========================= -->
 
-<section class="section flavors" id="flavors">
+    <section class="section flavors" id="flavors">
 
-  <div class="section-heading">
-    <p class="eyebrow">THE SPICE BROS LINEUP</p>
+      <div class="section-heading">
 
-    <h2>
-      FIND YOUR <span>FLAVOR.</span>
-    </h2>
+        <p class="eyebrow">
+          THE SPICE BROS LINEUP
+        </p>
 
-    <p>
-      Six unique flavors. One iconic toothpick.
-      Find the one that fits you.
-    </p>
-  </div>
-
-  <div class="flavor-grid">
-
-    <!-- Cinnamon -->
-    <article class="flavor-card cinnamon featured">
-
-      <div class="flavor-icon">
-        <i class="fa-solid fa-fire"></i>
-      </div>
-
-      <div>
-        <span class="flavor-number">01</span>
-
-        <h3>Cinnamon</h3>
+        <h2>
+          FIND YOUR <span>FLAVOR.</span>
+        </h2>
 
         <p>
-          The flavor that started it all. Bold, warm,
-          classic, and unmistakably Spice Bros.
+          Six unique flavors. One iconic toothpick.
+          Find the one that fits you.
         </p>
+
       </div>
 
-      <span class="flavor-tag">
-        ICONIC
-      </span>
 
-    </article>
+      <div class="flavor-grid">
 
 
-    <!-- Lemon/Lime -->
-    <article class="flavor-card lemon-lime">
+        <!-- CINNAMON -->
 
-      <div class="flavor-icon">
-        <i class="fa-solid fa-lemon"></i>
+        <article class="flavor-card cinnamon featured">
+
+          <div class="flavor-icon">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+
+          <div>
+
+            <span class="flavor-number">
+              01
+            </span>
+
+            <h3>
+              Cinnamon
+            </h3>
+
+            <p>
+              The flavor that started it all.
+              Bold, warm, classic, and unmistakably
+              Spice Bros.
+            </p>
+
+          </div>
+
+          <span class="flavor-tag">
+            ICONIC
+          </span>
+
+        </article>
+
+
+        <!-- LEMON / LIME -->
+
+        <article class="flavor-card lemon-lime">
+
+          <div class="flavor-icon">
+            <i class="fa-solid fa-lemon"></i>
+          </div>
+
+          <div>
+
+            <span class="flavor-number">
+              02
+            </span>
+
+            <h3>
+              Lemon/Lime
+            </h3>
+
+            <p>
+              Sharp and zesty with an incredibly clean,
+              refreshing finish.
+            </p>
+
+          </div>
+
+          <span class="flavor-tag">
+            ZESTY
+          </span>
+
+        </article>
+
+
+        <!-- PEPPERMINT -->
+
+        <article class="flavor-card peppermint">
+
+          <div class="flavor-icon">
+            <i class="fa-solid fa-snowflake"></i>
+          </div>
+
+          <div>
+
+            <span class="flavor-number">
+              03
+            </span>
+
+            <h3>
+              Peppermint
+            </h3>
+
+            <p>
+              An absolute essential. Clean, crisp,
+              refreshing, and always in demand.
+            </p>
+
+          </div>
+
+          <span class="flavor-tag">
+            ESSENTIAL
+          </span>
+
+        </article>
+
+
+        <!-- PINEAPPLE -->
+
+        <article class="flavor-card pineapple">
+
+          <div class="flavor-icon">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+
+          <div>
+
+            <span class="flavor-number">
+              04
+            </span>
+
+            <h3>
+              Pineapple
+            </h3>
+
+            <p>
+              Sun-ripened juiciness balanced with a
+              crisp and refreshing tang.
+            </p>
+
+          </div>
+
+          <span class="flavor-tag">
+            TROPICAL
+          </span>
+
+        </article>
+
+
+        <!-- ROOT BEER -->
+
+        <article class="flavor-card root-beer">
+
+          <div class="flavor-icon">
+            <i class="fa-solid fa-mug-hot"></i>
+          </div>
+
+          <div>
+
+            <span class="flavor-number">
+              05
+            </span>
+
+            <h3>
+              Root Beer
+            </h3>
+
+            <p>
+              Sweet, nostalgic, and packed with a complex
+              spice blend that translates perfectly to a toothpick.
+            </p>
+
+          </div>
+
+          <span class="flavor-tag">
+            NOSTALGIC
+          </span>
+
+        </article>
+
+
+        <!-- RED RASPBERRY -->
+
+        <article class="flavor-card raspberry">
+
+          <div class="flavor-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div>
+
+            <span class="flavor-number">
+              06
+            </span>
+
+            <h3>
+              Red Raspberry
+            </h3>
+
+            <p>
+              Sweet and bold with a mouth-watering candy
+              burst that keeps your hands and mind busy.
+            </p>
+
+          </div>
+
+          <span class="flavor-tag">
+            BOLD
+          </span>
+
+        </article>
+
       </div>
 
-      <div>
-        <span class="flavor-number">02</span>
-
-        <h3>Lemon/Lime</h3>
-
-        <p>
-          Sharp and zesty with an incredibly clean,
-          refreshing finish.
-        </p>
-      </div>
-
-      <span class="flavor-tag">
-        ZESTY
-      </span>
-
-    </article>
+    </section>
 
 
-    <!-- Peppermint -->
-    <article class="flavor-card peppermint">
-
-      <div class="flavor-icon">
-        <i class="fa-solid fa-snowflake"></i>
-      </div>
-
-      <div>
-        <span class="flavor-number">03</span>
-
-        <h3>Peppermint</h3>
-
-        <p>
-          An absolute essential. Clean, crisp,
-          refreshing, and always in demand.
-        </p>
-      </div>
-
-      <span class="flavor-tag">
-        ESSENTIAL
-      </span>
-
-    </article>
-
-
-    <!-- Pineapple -->
-    <article class="flavor-card pineapple">
-
-      <div class="flavor-icon">
-        <i class="fa-solid fa-sun"></i>
-      </div>
-
-      <div>
-        <span class="flavor-number">04</span>
-
-        <h3>Pineapple</h3>
-
-        <p>
-          Sun-ripened juiciness balanced with a
-          crisp and refreshing tang.
-        </p>
-      </div>
-
-      <span class="flavor-tag">
-        TROPICAL
-      </span>
-
-    </article>
-
-
-    <!-- Root Beer -->
-    <article class="flavor-card root-beer">
-
-      <div class="flavor-icon">
-        <i class="fa-solid fa-mug-hot"></i>
-      </div>
-
-      <div>
-        <span class="flavor-number">05</span>
-
-        <h3>Root Beer</h3>
-
-        <p>
-          Sweet, nostalgic, and packed with a complex
-          spice blend that translates perfectly to a toothpick.
-        </p>
-      </div>
-
-      <span class="flavor-tag">
-        NOSTALGIC
-      </span>
-
-    </article>
-
-
-    <!-- Red Raspberry -->
-    <article class="flavor-card raspberry">
-
-      <div class="flavor-icon">
-        <i class="fa-solid fa-heart"></i>
-      </div>
-
-      <div>
-        <span class="flavor-number">06</span>
-
-        <h3>Red Raspberry</h3>
-
-        <p>
-          Sweet and bold with a mouth-watering candy
-          burst that keeps your hands and mind busy.
-        </p>
-      </div>
-
-      <span class="flavor-tag">
-        BOLD
-      </span>
-
-    </article>
-
-  </div>
-
-</section>
-
-
-    <!-- ================= ABOUT ================= -->
+    <!-- =========================
+         ABOUT
+    ========================= -->
 
     <section class="section about" id="about">
+
 
       <div class="about-image">
 
         <div class="about-badge">
-          <span>SPICE</span>
-          <strong>BROS</strong>
+
+          <span>
+            SPICE
+          </span>
+
+          <strong>
+            BROS
+          </strong>
+
         </div>
 
       </div>
@@ -292,7 +381,9 @@
 
       <div class="about-content">
 
-        <p class="eyebrow">MEET THE TEAM</p>
+        <p class="eyebrow">
+          MEET THE TEAM
+        </p>
 
         <h2>
           THREE BROS.<br>
@@ -313,29 +404,75 @@
 
         <div class="founders">
 
-          <div class="founder">
-            <div class="founder-number">-</div>
-            <div>
-              <h3>Lincoln O'Bryant</h3>
-              <p>Co-Founder</p>
-            </div>
-          </div>
+
+          <!-- LINCOLN -->
 
           <div class="founder">
-            <div class="founder-number">-</div>
-            <div>
-              <h3>Logan O'Bryant</h3>
-              <p>Co-Founder</p>
+
+            <div class="founder-number">
+              01
             </div>
+
+            <div>
+
+              <h3>
+                Lincoln O'Bryant
+              </h3>
+
+              <p>
+                Co-Founder
+              </p>
+
+            </div>
+
           </div>
 
+
+          <!-- LOGAN -->
+
           <div class="founder">
-            <div class="founder-number">-</div>
-            <div>
-              <h3>Davin Yates</h3>
-              <p>Co-Founder</p>
+
+            <div class="founder-number">
+              02
             </div>
+
+            <div>
+
+              <h3>
+                Logan O'Bryant
+              </h3>
+
+              <p>
+                Co-Founder
+              </p>
+
+            </div>
+
           </div>
+
+
+          <!-- DAVIN -->
+
+          <div class="founder">
+
+            <div class="founder-number">
+              03
+            </div>
+
+            <div>
+
+              <h3>
+                Davin Yates
+              </h3>
+
+              <p>
+                Co-Founder
+              </p>
+
+            </div>
+
+          </div>
+
 
         </div>
 
@@ -344,7 +481,9 @@
     </section>
 
 
-    <!-- ================= CTA ================= -->
+    <!-- =========================
+         CTA
+    ========================= -->
 
     <section class="cta">
 
@@ -364,8 +503,11 @@
         </p>
 
         <a href="#contact" class="btn primary">
+
           Get In Touch
+
           <i class="fa-solid fa-arrow-right"></i>
+
         </a>
 
       </div>
@@ -373,13 +515,17 @@
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
+    <!-- =========================
+         CONTACT
+    ========================= -->
 
     <section class="section contact" id="contact">
 
       <div class="section-heading">
 
-        <p class="eyebrow">CONTACT</p>
+        <p class="eyebrow">
+          CONTACT
+        </p>
 
         <h2>
           TALK TO THE <span>BROS.</span>
@@ -395,19 +541,31 @@
 
       <div class="contact-grid">
 
+
+        <!-- BUSINESS -->
+
         <div class="contact-card">
 
           <i class="fa-solid fa-handshake"></i>
 
-          <h3>Business</h3>
+          <h3>
+            Business
+          </h3>
 
           <p>
             Interested in working with Spice Bros?
           </p>
 
-          <p>(385) 204-8208 - Business Inquiries </p>
+          <a href="tel:+13852048208">
+            (385) 204-8208
+          </a>
+
+          <p>
+            Business Inquiries
+          </p>
 
         </div>
+
 
       </div>
 
@@ -416,17 +574,28 @@
   </main>
 
 
-  <!-- ================= FOOTER ================= -->
+  <!-- =========================
+       FOOTER
+  ========================= -->
 
   <footer>
 
+
     <div class="footer-main">
+
+
+      <!-- BRAND -->
 
       <div class="footer-brand">
 
         <a href="#home" class="logo">
-  <img src="logo.png" alt="Spice Bros">
-</a>
+
+          <img
+            src="logo.png"
+            alt="Spice Bros"
+          >
+
+        </a>
 
         <p>
           Bold flavors. Big ideas.
@@ -435,19 +604,37 @@
       </div>
 
 
+      <!-- NAVIGATION -->
+
       <div class="footer-links">
 
-        <h3>Navigate</h3>
+        <h3>
+          Navigate
+        </h3>
 
-        <a href="#home">Home</a>
-        <a href="#flavors">Flavors</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">
+          Home
+        </a>
+
+        <a href="#flavors">
+          Flavors
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
 
       </div>
 
+
     </div>
 
+
+    <!-- FOOTER BOTTOM -->
 
     <div class="footer-bottom">
 
@@ -456,31 +643,69 @@
       </p>
 
       <p class="collab">
+
         Website by
-        <strong>CT Web Solutions</strong>
+
+        <strong>
+          CT Web Solutions
+        </strong>
+
       </p>
 
     </div>
 
+
   </footer>
 
 
+  <!-- =========================
+       MOBILE NAVIGATION
+  ========================= -->
+
   <script>
 
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+    const menuToggle =
+      document.querySelector(".menu-toggle");
+
+    const navLinks =
+      document.querySelector(".nav-links");
+
 
     menuToggle.addEventListener("click", () => {
+
       navLinks.classList.toggle("active");
+
+      const isOpen =
+        navLinks.classList.contains("active");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        isOpen
+      );
+
     });
 
-    document.querySelectorAll(".nav-links a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
+
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          navLinks.classList.remove("active");
+
+          menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+        });
+
       });
-    });
 
   </script>
 
+
 </body>
+
 </html>
