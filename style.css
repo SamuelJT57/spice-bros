@@ -657,15 +657,15 @@ img {
   text-align: center;
 
   background:
-    linear-gradient(
-      135deg,
-      #381207,
-      #170c08
+    radial-gradient(
+      circle at center,
+      #18200f 0%,
+      #0d1009 40%,
+      #080808 75%
     );
 
-  border-top: 1px solid #4a1b0c;
-
-  border-bottom: 1px solid #4a1b0c;
+  border-top: 1px solid #27351a;
+  border-bottom: 1px solid #27351a;
 }
 
 .cta > div {
