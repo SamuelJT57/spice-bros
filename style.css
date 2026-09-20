@@ -1220,3 +1220,19 @@ footer {
 
   text-align: center;
 }
+
+@media (max-width: 800px) {
+
+  .hero-logo-card {
+    width: 300px;
+    min-height: 430px;
+
+    padding: 25px;
+  }
+
+  .hero-logo {
+    max-width: 240px;
+    max-height: 350px;
+  }
+
+}
