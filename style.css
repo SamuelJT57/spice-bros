@@ -3,16 +3,16 @@
 ========================= */
 
 :root {
-  --bg: #0c0c0c;
-  --bg-light: #151515;
-  --card: #191919;
+  --bg: #080808;
+  --bg-light: #111111;
+  --card: #151515;
 
   --text: #ffffff;
   --muted: #a5a5a5;
 
-  --orange: #f4511e;
-  --orange-light: #ff7a3d;
-  --red: #c62828;
+  --green: #9bc65a;
+  --green-light: #b3e06c;
+  --green-dark: #71983e;
 
   --border: #292929;
 
@@ -88,7 +88,7 @@ img {
 }
 
 .logo span {
-  color: var(--orange);
+  color: var(--green);
 }
 
 .nav-links {
@@ -105,7 +105,7 @@ img {
 }
 
 .nav-links a:hover {
-  color: var(--orange);
+  color: var(--green);
 }
 
 .menu-toggle {
@@ -144,7 +144,7 @@ img {
 }
 
 .eyebrow {
-  color: var(--orange);
+  color: var(--green);
 
   font-size: 0.78rem;
 
@@ -171,7 +171,7 @@ img {
 .section-heading span,
 .about-content span,
 .cta span {
-  color: var(--orange);
+  color: var(--green);
 }
 
 .hero-text {
@@ -214,13 +214,13 @@ img {
 }
 
 .btn.primary {
-  background: var(--orange);
+  background: var(--green);
 
   color: white;
 }
 
 .btn.primary:hover {
-  background: var(--orange-light);
+  background: var(--green-light);
 
   transform: translateY(-2px);
 }
@@ -232,9 +232,9 @@ img {
 }
 
 .btn.secondary:hover {
-  border-color: var(--orange);
+  border-color: var(--green);
 
-  color: var(--orange);
+  color: var(--green);
 }
 
 
@@ -293,7 +293,7 @@ img {
   width: 250px;
   height: 250px;
 
-  background: var(--orange);
+  background: var(--green);
 
   filter: blur(100px);
 
@@ -314,7 +314,7 @@ img {
 
   border-radius: 50%;
 
-  background: var(--orange);
+  background: var(--green);
 
   font-size: 3rem;
 
@@ -324,7 +324,7 @@ img {
 .product-card p {
   position: relative;
 
-  color: var(--orange);
+  color: var(--green);
 
   font-weight: 900;
 
@@ -438,7 +438,7 @@ img {
 .flavor-card:hover {
   transform: translateY(-5px);
 
-  border-color: var(--orange);
+  border-color: var(--green);
 }
 
 .flavor-icon {
@@ -455,7 +455,7 @@ img {
 
   background: #242424;
 
-  color: var(--orange);
+  color: var(--green);
 
   font-size: 1.4rem;
 
@@ -497,7 +497,7 @@ img {
 
   letter-spacing: 2px;
 
-  color: var(--orange);
+  color: var(--green);
 }
 
 
@@ -551,7 +551,7 @@ img {
 
   align-items: center;
 
-  border: 8px solid var(--orange);
+  border: 8px solid var(--green);
 
   border-radius: 50%;
 
@@ -562,7 +562,7 @@ img {
 }
 
 .about-badge span {
-  color: var(--orange);
+  color: var(--green);
 
   font-size: 1.2rem;
 
@@ -627,7 +627,7 @@ img {
 
   justify-content: center;
 
-  background: var(--orange);
+  background: var(--green);
 
   font-size: 0.75rem;
 
@@ -714,7 +714,7 @@ img {
 }
 
 .contact-card > i {
-  color: var(--orange);
+  color: var(--green);
 
   font-size: 1.7rem;
 
@@ -734,7 +734,7 @@ img {
 }
 
 .contact-card a {
-  color: var(--orange);
+  color: var(--green);
 
   font-weight: 700;
 
@@ -785,7 +785,7 @@ footer {
 
   font-size: 0.9rem;
 
-  color: var(--orange);
+  color: var(--green);
 
   text-transform: uppercase;
 
@@ -823,7 +823,7 @@ footer {
 }
 
 .collab strong {
-  color: var(--orange);
+  color: var(--green);
 }
 
 
@@ -1145,7 +1145,7 @@ footer {
 
   margin: 25px 0 15px;
 
-  background: var(--orange);
+  background: var(--green);
 }
 
 .hero-logo-card p {
@@ -1205,12 +1205,4 @@ footer {
   .hero-logo-card img {
     max-height: 350px;
   }
-}
-
-:root {
-  --bg-color: #080808;
-  --text-color: #ffffff;
-  --accent-color: #9bc65a;
-  --accent-hover: #b3e06c;
-  --card-bg: #151515;
 }
