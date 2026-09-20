@@ -1,3 +1,9 @@
+/* =========================================================
+   SPICE BROS — STYLE.CSS
+   Cataldo-Turner Web Solutions
+========================================================= */
+
+
 /* =========================
    VARIABLES
 ========================= */
@@ -35,14 +41,9 @@ html {
 }
 
 body {
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
   background: var(--bg);
   color: var(--text);
-
   line-height: 1.6;
 }
 
@@ -72,24 +73,40 @@ img {
   align-items: center;
   justify-content: space-between;
 
-  padding: 20px 5%;
+  padding: 12px 5%;
 
-  background: rgba(12, 12, 12, 0.95);
+  background: rgba(8, 8, 8, 0.95);
 
   border-bottom: 1px solid var(--border);
 
   backdrop-filter: blur(12px);
 }
 
+
+/* Logo */
+
 .logo {
-  font-size: 1.35rem;
-  font-weight: 900;
-  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
-.logo span {
-  color: var(--green);
+.logo img {
+  width: 100px;
+  height: 68px;
+
+  object-fit: contain;
+  object-position: center;
+
+  transition: transform 0.2s ease;
 }
+
+.logo:hover img {
+  transform: scale(1.04);
+}
+
+
+/* Navigation */
 
 .nav-links {
   display: flex;
@@ -98,6 +115,7 @@ img {
 
 .nav-links a {
   color: #ddd;
+
   font-size: 0.95rem;
   font-weight: 700;
 
@@ -108,11 +126,15 @@ img {
   color: var(--green);
 }
 
+
+/* Mobile menu button */
+
 .menu-toggle {
   display: none;
 
   border: none;
   background: transparent;
+
   color: white;
 
   font-size: 1.5rem;
@@ -143,6 +165,9 @@ img {
   gap: 60px;
 }
 
+
+/* Eyebrow */
+
 .eyebrow {
   color: var(--green);
 
@@ -154,6 +179,9 @@ img {
 
   margin-bottom: 15px;
 }
+
+
+/* Main heading */
 
 .hero h1 {
   font-size: clamp(3rem, 7vw, 6.5rem);
@@ -173,6 +201,9 @@ img {
 .cta span {
   color: var(--green);
 }
+
+
+/* Hero paragraph */
 
 .hero-text {
   color: var(--muted);
@@ -213,8 +244,12 @@ img {
   transition: 0.2s ease;
 }
 
+
+/* Primary button */
+
 .btn.primary {
   background: var(--green);
+
   color: #080808;
 }
 
@@ -223,6 +258,9 @@ img {
 
   transform: translateY(-2px);
 }
+
+
+/* Secondary button */
 
 .btn.secondary {
   border: 1px solid #444;
@@ -238,7 +276,7 @@ img {
 
 
 /* =========================
-   HERO PRODUCT
+   HERO PRODUCT / LOGO
 ========================= */
 
 .hero-product {
@@ -249,13 +287,12 @@ img {
   align-items: center;
 }
 
-.product-card {
-  width: 330px;
-  height: 450px;
 
-  position: relative;
+/* Main logo card */
 
-  overflow: hidden;
+.hero-logo-card {
+  width: 380px;
+  min-height: 540px;
 
   display: flex;
 
@@ -265,95 +302,68 @@ img {
 
   align-items: center;
 
-  text-align: center;
+  padding: 30px;
 
-  padding: 40px;
+  background: #000;
 
-  background:
-    linear-gradient(
-      145deg,
-      #292929,
-      #101010
-    );
+  border: 1px solid var(--border);
 
-  border: 1px solid #363636;
-
-  border-radius: 18px;
+  border-radius: 20px;
 
   box-shadow:
-    0 30px 80px rgba(0, 0, 0, 0.6);
+    0 30px 80px rgba(0, 0, 0, 0.7);
 
   transform: rotate(3deg);
+
+  transition: 0.3s ease;
 }
 
-.product-glow {
-  position: absolute;
+.hero-logo-card:hover {
+  transform: rotate(0deg) translateY(-6px);
+}
 
-  width: 250px;
-  height: 250px;
+
+/* Actual Spice Bros logo */
+
+.hero-logo {
+  width: 100%;
+
+  max-width: 310px;
+
+  max-height: 470px;
+
+  object-fit: contain;
+}
+
+
+/* Green divider */
+
+.hero-divider {
+  width: 60px;
+
+  height: 3px;
+
+  margin: 15px 0;
 
   background: var(--green);
 
-  filter: blur(100px);
-
-  opacity: 0.25;
+  box-shadow:
+    0 0 15px rgba(155, 198, 90, 0.4);
 }
 
-.toothpick-icon {
-  position: relative;
 
-  width: 110px;
-  height: 110px;
+/* Logo caption */
 
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  border-radius: 50%;
-
-  background: var(--green);
-
-  font-size: 3rem;
-
-  margin-bottom: 25px;
-}
-
-.product-card p {
-  position: relative;
-
-  color: var(--green);
-
-  font-weight: 900;
-
-  letter-spacing: 4px;
-}
-
-.product-card h2 {
-  position: relative;
-
-  margin-top: 10px;
-
-  font-size: 2rem;
-
-  line-height: 1;
-
-  letter-spacing: -1px;
-}
-
-.product-label {
-  position: relative;
-
-  margin-top: 30px;
-
-  padding: 5px 12px;
-
-  border: 1px solid #555;
+.hero-logo-card p {
+  color: var(--muted);
 
   font-size: 0.7rem;
 
-  letter-spacing: 2px;
+  font-weight: 900;
+
+  letter-spacing: 3px;
+
+  text-align: center;
 }
 
 
@@ -368,6 +378,9 @@ img {
 
   padding: 110px 5%;
 }
+
+
+/* Section heading */
 
 .section-heading {
   text-align: center;
@@ -410,6 +423,9 @@ img {
   gap: 20px;
 }
 
+
+/* Flavor card */
+
 .flavor-card {
   position: relative;
 
@@ -437,8 +453,42 @@ img {
 .flavor-card:hover {
   transform: translateY(-5px);
 
-  border-color: var(--green);
+  border-color: var(--flavor-color);
 }
+
+
+/* Flavor glow */
+
+.flavor-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  right: -50px;
+  bottom: -50px;
+
+  border-radius: 50%;
+
+  background: var(--flavor-color);
+
+  opacity: 0.08;
+
+  filter: blur(10px);
+
+  transition: 0.25s ease;
+}
+
+.flavor-card:hover::after {
+  transform: scale(1.5);
+
+  opacity: 0.14;
+}
+
+
+/* Flavor icon */
 
 .flavor-icon {
   width: 55px;
@@ -454,12 +504,15 @@ img {
 
   background: #242424;
 
-  color: var(--green);
+  color: var(--flavor-color);
 
   font-size: 1.4rem;
 
   margin-bottom: 25px;
 }
+
+
+/* Flavor number */
 
 .flavor-number {
   color: #666;
@@ -471,11 +524,17 @@ img {
   letter-spacing: 2px;
 }
 
+
+/* Flavor title */
+
 .flavor-card h3 {
   font-size: 2rem;
 
   margin: 4px 0 8px;
 }
+
+
+/* Flavor description */
 
 .flavor-card p {
   color: var(--muted);
@@ -483,11 +542,13 @@ img {
   max-width: 400px;
 }
 
+
+/* Flavor tag */
+
 .flavor-tag {
   position: absolute;
 
   top: 25px;
-
   right: 25px;
 
   font-size: 0.65rem;
@@ -496,7 +557,70 @@ img {
 
   letter-spacing: 2px;
 
-  color: var(--green);
+  color: var(--flavor-color);
+
+  z-index: 2;
+}
+
+
+/* =========================
+   FLAVOR COLORS
+========================= */
+
+.cinnamon {
+  --flavor-color: #c96a32;
+}
+
+.lemon-lime {
+  --flavor-color: #c9df35;
+}
+
+.peppermint {
+  --flavor-color: #79e6d0;
+}
+
+.pineapple {
+  --flavor-color: #f4c542;
+}
+
+.root-beer {
+  --flavor-color: #9a5b3a;
+}
+
+.raspberry {
+  --flavor-color: #e63963;
+}
+
+
+/* Featured Cinnamon */
+
+.flavor-card.featured {
+  border-color: #8c4522;
+}
+
+.flavor-card.featured::before {
+  content: "SPICE BROS ORIGINAL";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  padding: 6px 12px;
+
+  background: var(--flavor-color);
+
+  color: white;
+
+  font-size: 0.6rem;
+
+  font-weight: 900;
+
+  letter-spacing: 1.5px;
+
+  border-bottom-right-radius: 6px;
+
+  z-index: 3;
 }
 
 
@@ -516,11 +640,16 @@ img {
   border-top: 1px solid var(--border);
 }
 
+
+/* About image */
+
 .about-image {
   min-height: 500px;
 
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 
   background:
@@ -535,6 +664,9 @@ img {
 
   border: 1px solid var(--border);
 }
+
+
+/* About badge */
 
 .about-badge {
   width: 220px;
@@ -555,7 +687,7 @@ img {
   transform: rotate(-8deg);
 
   box-shadow:
-  0 0 60px rgba(155, 198, 90, 0.25);
+    0 0 60px rgba(155, 198, 90, 0.25);
 }
 
 .about-badge span {
@@ -571,6 +703,9 @@ img {
 .about-badge strong {
   font-size: 2.5rem;
 }
+
+
+/* About content */
 
 .about-content h2 {
   font-size: clamp(2.5rem, 5vw, 4rem);
@@ -589,6 +724,11 @@ img {
 
   max-width: 600px;
 }
+
+
+/* =========================
+   FOUNDERS
+========================= */
 
 .founders {
   margin-top: 35px;
@@ -612,7 +752,16 @@ img {
   border-radius: 8px;
 
   background: #111;
+
+  transition: 0.2s ease;
 }
+
+.founder:hover {
+  border-color: var(--green);
+}
+
+
+/* Founder number */
 
 .founder-number {
   width: 38px;
@@ -624,7 +773,11 @@ img {
 
   justify-content: center;
 
+  flex-shrink: 0;
+
   background: var(--green);
+
+  color: #080808;
 
   font-size: 0.75rem;
 
@@ -662,6 +815,7 @@ img {
     );
 
   border-top: 1px solid #27351a;
+
   border-bottom: 1px solid #27351a;
 }
 
@@ -708,6 +862,14 @@ img {
   border: 1px solid var(--border);
 
   border-radius: 10px;
+
+  transition: 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+
+  border-color: var(--green);
 }
 
 .contact-card > i {
@@ -738,6 +900,10 @@ img {
   font-size: 0.9rem;
 }
 
+.contact-card a:hover {
+  color: var(--green-light);
+}
+
 
 /* =========================
    FOOTER
@@ -748,6 +914,9 @@ footer {
 
   border-top: 1px solid var(--border);
 }
+
+
+/* Footer main */
 
 .footer-main {
   max-width: var(--max-width);
@@ -763,11 +932,25 @@ footer {
   gap: 50px;
 }
 
+
+/* Footer brand */
+
 .footer-brand p {
   color: var(--muted);
 
   margin-top: 10px;
 }
+
+
+/* Footer logo */
+
+.footer-brand .logo img {
+  width: 135px;
+  height: 95px;
+}
+
+
+/* Footer links */
 
 .footer-links {
   display: flex;
@@ -798,6 +981,9 @@ footer {
 .footer-links a:hover {
   color: white;
 }
+
+
+/* Footer bottom */
 
 .footer-bottom {
   max-width: var(--max-width);
@@ -830,11 +1016,21 @@ footer {
 
 @media (max-width: 800px) {
 
+  /* Navbar */
+
+  .navbar {
+    padding: 10px 5%;
+  }
+
+  .logo img {
+    width: 75px;
+    height: 55px;
+  }
+
   .nav-links {
     position: absolute;
 
     top: 100%;
-
     left: 0;
 
     width: 100%;
@@ -845,7 +1041,7 @@ footer {
 
     gap: 0;
 
-    background: #0c0c0c;
+    background: #080808;
 
     border-bottom: 1px solid var(--border);
   }
@@ -865,6 +1061,8 @@ footer {
   }
 
 
+  /* Hero */
+
   .hero {
     grid-template-columns: 1fr;
 
@@ -875,6 +1073,7 @@ footer {
 
   .hero-text {
     margin-left: auto;
+
     margin-right: auto;
   }
 
@@ -887,10 +1086,37 @@ footer {
   }
 
 
+  /* Hero logo */
+
+  .hero-logo-card {
+    width: 300px;
+
+    min-height: 450px;
+
+    padding: 20px;
+
+    transform: rotate(2deg);
+  }
+
+  .hero-logo-card:hover {
+    transform: rotate(0deg) translateY(-4px);
+  }
+
+  .hero-logo {
+    max-width: 250px;
+
+    max-height: 390px;
+  }
+
+
+  /* Flavors */
+
   .flavor-grid {
     grid-template-columns: 1fr;
   }
 
+
+  /* About */
 
   .about {
     grid-template-columns: 1fr;
@@ -903,10 +1129,14 @@ footer {
   }
 
 
+  /* Contact */
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
 
+
+  /* Footer */
 
   .footer-main {
     grid-template-columns: 1fr;
@@ -914,12 +1144,21 @@ footer {
     gap: 35px;
   }
 
+  .footer-brand .logo img {
+    width: 110px;
+
+    height: 75px;
+  }
+
   .footer-bottom {
     flex-direction: column;
   }
-
 }
 
+
+/* =========================
+   SMALL PHONES
+========================= */
 
 @media (max-width: 500px) {
 
@@ -927,265 +1166,40 @@ footer {
     letter-spacing: -2px;
   }
 
-  .product-card {
+  .hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hero-logo-card {
     width: 280px;
-    height: 390px;
+
+    min-height: 420px;
+  }
+
+  .hero-logo {
+    max-width: 235px;
+
+    max-height: 365px;
   }
 
   .section {
     padding-top: 80px;
+
     padding-bottom: 80px;
   }
 
   .cta {
     padding-top: 90px;
+
     padding-bottom: 90px;
   }
 
-}
-
-/* =========================
-   FLAVOR VARIATIONS
-========================= */
-
-.flavor-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.flavor-card::after {
-  content: "";
-
-  position: absolute;
-
-  width: 150px;
-  height: 150px;
-
-  right: -50px;
-  bottom: -50px;
-
-  border-radius: 50%;
-
-  background: var(--flavor-color);
-
-  opacity: 0.08;
-
-  filter: blur(10px);
-
-  transition: 0.25s ease;
-}
-
-.flavor-card:hover::after {
-  transform: scale(1.5);
-  opacity: 0.14;
-}
-
-
-/* Cinnamon */
-
-.cinnamon {
-  --flavor-color: #c96a32;
-}
-
-
-/* Lemon / Lime */
-
-.lemon-lime {
-  --flavor-color: #c9df35;
-}
-
-
-/* Peppermint */
-
-.peppermint {
-  --flavor-color: #79e6d0;
-}
-
-
-/* Pineapple */
-
-.pineapple {
-  --flavor-color: #f4c542;
-}
-
-
-/* Root Beer */
-
-.root-beer {
-  --flavor-color: #9a5b3a;
-}
-
-
-/* Red Raspberry */
-
-.raspberry {
-  --flavor-color: #e63963;
-}
-
-
-/* Flavor icon */
-
-.flavor-card .flavor-icon {
-  color: var(--flavor-color);
-}
-
-
-/* Featured Cinnamon flavor */
-
-.flavor-card.featured {
-  border-color: #8c4522;
-}
-
-.flavor-card.featured::before {
-  content: "SPICE BROS ORIGINAL";
-
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  padding: 6px 12px;
-
-  background: var(--flavor-color);
-
-  color: white;
-
-  font-size: 0.6rem;
-  font-weight: 900;
-
-  letter-spacing: 1.5px;
-
-  border-bottom-right-radius: 6px;
-
-  z-index: 2;
-}
-
-
-/* =========================
-   SPICE BROS LOGO
-========================= */
-
-.logo {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.logo img {
-  width: 90px;
-  height: 62px;
-
-  object-fit: contain;
-
-  transition: transform 0.2s ease;
-}
-
-.logo:hover img {
-  transform: scale(1.04);
-}
-
-
-/* Footer logo */
-
-.footer-brand .logo img {
-  width: 130px;
-  height: 90px;
-}
-
-
-/* =========================
-   HERO LOGO
-========================= */
-
-.hero-logo-card {
-  width: 380px;
-  min-height: 520px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  padding: 35px;
-
-  background: #000;
-
-  border: 1px solid var(--border);
-
-  border-radius: 20px;
-
-  box-shadow:
-    0 30px 80px rgba(0, 0, 0, 0.65);
-
-  transform: rotate(3deg);
-
-  transition: 0.3s ease;
-}
-
-.hero-logo-card:hover {
-  transform: rotate(0deg) translateY(-5px);
-}
-
-.hero-logo {
-  width: 100%;
-  max-width: 300px;
-  max-height: 420px;
-
-  object-fit: contain;
-}
-
-.hero-divider {
-  width: 60px;
-  height: 3px;
-
-  margin: 20px 0 15px;
-
-  background: var(--green);
-
-  box-shadow:
-    0 0 15px rgba(155, 198, 90, 0.4);
-}
-
-.hero-logo-card p {
-  color: var(--muted);
-
-  font-size: 0.7rem;
-  font-weight: 900;
-
-  letter-spacing: 3px;
-
-  text-align: center;
-}
-
-
-/* =========================
-   MOBILE LOGO
-========================= */
-
-@media (max-width: 800px) {
-
-  .logo img {
-    width: 70px;
-    height: 55px;
+  .flavor-card {
+    padding: 28px;
   }
 
-  .footer-brand .logo img {
-    width: 110px;
-    height: 75px;
+  .flavor-card h3 {
+    font-size: 1.7rem;
   }
-
-  .hero-logo-card {
-    width: 300px;
-    min-height: 430px;
-
-    padding: 25px;
-  }
-
-  .hero-logo {
-    max-width: 240px;
-    max-height: 350px;
-  }
-
 }
-
-  
